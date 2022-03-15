@@ -6,4 +6,4 @@
 
 #define DECLARE_PIMPL() \
   struct impl;          \
-  std::experimental::propagate_const<std::unique_ptr<impl>> m_pimpl;
+  modern::rpc::details::propagate_const<std::unique_ptr<impl>> m_pimpl;
